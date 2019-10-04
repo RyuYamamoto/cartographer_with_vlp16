@@ -1,0 +1,453 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /TF1
+        - /PointCloud21
+        - /Submaps1
+      Splitter Ratio: 0.600670993
+    Tree Height: 714
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.588679016
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: PointCloud2
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.0299999993
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 100
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        base_footprint:
+          Value: true
+        base_link:
+          Value: true
+        body_imu_reverse:
+          Value: true
+        body_imu_yaw:
+          Value: true
+        box_link:
+          Value: true
+        caster_holder_link:
+          Value: true
+        caster_wheel_link:
+          Value: true
+        gyro_gazebo_link:
+          Value: true
+        gyro_link:
+          Value: true
+        kinect2_depth_frame:
+          Value: true
+        kinect2_depth_optical_frame:
+          Value: true
+        kinect2_ir_optical_frame:
+          Value: true
+        kinect2_link:
+          Value: true
+        kinect2_rgb_frame:
+          Value: true
+        kinect2_rgb_optical_frame:
+          Value: true
+        map:
+          Value: true
+        odom:
+          Value: true
+        rslidar:
+          Value: true
+        scan_body_link:
+          Value: true
+        scan_foot_left_link:
+          Value: true
+        scan_foot_right_link:
+          Value: true
+        scan_head_link:
+          Value: true
+        sonar_left_front_frame:
+          Value: true
+        sonar_left_front_reciever_frame:
+          Value: true
+        sonar_left_oblique_frame:
+          Value: true
+        sonar_left_oblique_reciever_frame:
+          Value: true
+        sonar_left_side_frame:
+          Value: true
+        sonar_left_side_reciever_frame:
+          Value: true
+        sonar_right_front_frame:
+          Value: true
+        sonar_right_front_reciever_frame:
+          Value: true
+        sonar_right_oblique_frame:
+          Value: true
+        sonar_right_oblique_reciever_frame:
+          Value: true
+        sonar_right_side_frame:
+          Value: true
+        sonar_right_side_reciever_frame:
+          Value: true
+        velodyne:
+          Value: true
+        velodyne_back:
+          Value: true
+        velodyne_back_base_link:
+          Value: true
+        velodyne_front:
+          Value: true
+        velodyne_front_base_link:
+          Value: true
+        velodyne_front_link:
+          Value: true
+        velodyne_front_link_base_link:
+          Value: true
+        velodyne_rear_link:
+          Value: true
+        velodyne_rear_link_base_link:
+          Value: true
+        wheel_left:
+          Value: true
+        wheel_right:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        map:
+          odom:
+            base_footprint:
+              base_link:
+                box_link:
+                  caster_holder_link:
+                    caster_wheel_link:
+                      {}
+                  gyro_gazebo_link:
+                    {}
+                  wheel_left:
+                    {}
+                  wheel_right:
+                    {}
+                gyro_link:
+                  {}
+                kinect2_link:
+                  kinect2_depth_frame:
+                    kinect2_depth_optical_frame:
+                      {}
+                    kinect2_ir_optical_frame:
+                      {}
+                  kinect2_rgb_frame:
+                    kinect2_rgb_optical_frame:
+                      {}
+                scan_body_link:
+                  {}
+                scan_foot_left_link:
+                  {}
+                scan_foot_right_link:
+                  {}
+                scan_head_link:
+                  {}
+                sonar_left_front_frame:
+                  sonar_left_front_reciever_frame:
+                    {}
+                sonar_left_oblique_frame:
+                  sonar_left_oblique_reciever_frame:
+                    {}
+                sonar_left_side_frame:
+                  sonar_left_side_reciever_frame:
+                    {}
+                sonar_right_front_frame:
+                  sonar_right_front_reciever_frame:
+                    {}
+                sonar_right_oblique_frame:
+                  sonar_right_oblique_reciever_frame:
+                    {}
+                sonar_right_side_frame:
+                  sonar_right_side_reciever_frame:
+                    {}
+                velodyne_back_base_link:
+                  velodyne_back:
+                    {}
+                velodyne_front_base_link:
+                  velodyne_front:
+                    {}
+                velodyne_front_link_base_link:
+                  velodyne_front_link:
+                    velodyne:
+                      {}
+                velodyne_rear_link_base_link:
+                  velodyne_rear_link:
+                    rslidar:
+                      {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        box_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        caster_holder_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        caster_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gyro_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        velodyne_back:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        velodyne_back_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        velodyne_front:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        velodyne_front_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheel_left:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheel_right:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 7.62650013
+        Min Value: 5.66666985
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 20; 220; 20
+      Color Transformer: FlatColor
+      Decay Time: 0.100000001
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 200
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.0299999993
+      Style: Flat Squares
+      Topic: /scan_matched_points2
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: Submaps
+      Enabled: true
+      Fade-out distance: 1
+      High Resolution: true
+      Low Resolution: false
+      Name: Submaps
+      Submap query service: /submap_query
+      Submaps:
+        All: true
+        Trajectory 0:
+          0.160: true
+          1.160: true
+          10.160: true
+          11.160: true
+          12.160: true
+          13.160: true
+          14.100: true
+          15.20: true
+          2.160: true
+          3.160: true
+          4.160: true
+          5.160: true
+          6.160: true
+          7.160: true
+          8.160: true
+          9.160: true
+          Value: true
+      Topic: /submap_list
+      Tracking frame: base_link
+      Unreliable: false
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /trajectory_node_list
+      Name: Trajectories
+      Namespaces:
+        Trajectory 0: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /landmark_poses_list
+      Name: Landmark Poses
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /constraint_list
+      Name: Constraints
+      Namespaces:
+        Inter constraints, different trajectories: true
+        Inter constraints, same trajectory: true
+        Inter residuals, different trajectories: true
+        Inter residuals, same trajectory: true
+        Intra constraints: true
+        Intra residuals: true
+      Queue Size: 100
+      Value: true
+    - Alpha: 0.699999988
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic: /map
+      Unreliable: false
+      Use Timestamp: false
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 100; 100; 100
+    Default Light: true
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Topic: /initialpose
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Angle: 0
+      Class: rviz/TopDownOrtho
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.0599999987
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.00999999978
+      Scale: 10.5686817
+      Target Frame: base_link
+      Value: TopDownOrtho (rviz)
+      X: -8.91758251
+      Y: 2.80676651
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1025
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd0000000400000000000001c50000035dfc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006300fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003f0000035d000000db00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f0000035dfc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003f0000035d000000b300fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007800000003ffc0100000002fb0000000800540069006d00650100000000000007800000031700fffffffb0000000800540069006d00650100000000000004500000000000000000000004a00000035d00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1920
+  X: 0
+  Y: 27

@@ -1,0 +1,27 @@
+<launch>
+  <param name="robot_description"
+    textfile="$(find sample_robot_description)/urdf/sample_robot.urdf" />
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher"
+    type="robot_state_publisher" />
+
+  <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory $(find velodyne_cartographer)/config
+          -configuration_basename vlp-16.lua"
+      output="screen">
+	  <remap from="/points2" to="/front_points_raw" />
+	  <remap from="/imu" to="/imu/data" />
+	  <remap from="/odom" to="/fusion/odom" />
+  </node>
+  <node name="tf_remove_frames" pkg="cartographer_ros"
+      type="tf_remove_frames.py">
+    <remap from="tf_out" to="/tf" />
+    <rosparam param="remove_frames">
+      - map
+			- odom
+    </rosparam>
+  </node>
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+      type="cartographer_occupancy_grid_node" args="-resolution 0.035" />
+</launch>
